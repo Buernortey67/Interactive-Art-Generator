@@ -1,0 +1,86 @@
+/* Importing Google Fonts */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tool-section,
+.color-section,
+.size-section,
+.random-section,
+.action-section {
+    margin: 5px 15px;
+    display: flex;
+    align-items: center;
+}
+
+label {
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+select,
+input[type="color"],
+input[type="range"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#sizeDisplay {
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.action-section button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.action-section button:hover {
+    background-color: #45a049;
+}
+
+.action-section button span {
+    pointer-events: none;
+}
+
+#canvas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+canvas {
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Art Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for styling -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Interactive Art Generator</h1>
+    </header>
+
+    <div class="toolbar">
+        <!-- Tool Selection -->
+        <div class="tool-section">
+            <label for="tool">Tool:</label>
+            <select id="tool">
+                <option value="pen">Pen</option>
+                <option value="line">Line</option>
+                <option value="rectangle">Rectangle</option>
+                <option value="circle">Circle</option>
+                <option value="triangle">Triangle</option>
+                <option value="eraser">Eraser</option>
+            </select>
+        </div>
+
+        <!-- Stroke Color -->
+        <div class="color-section">
+            <label for="strokeColor">Stroke Color:</label>
+            <input type="color" id="strokeColor" value="#000000">
+        </div>
+
+        <!-- Fill Color -->
+        <div class="color-section">
+            <label for="fillColor">Fill Color:</label>
+            <input type="color" id="fillColor" value="#ffffff">
+        </div>
+
+        <!-- Stroke Size -->
+        <div class="size-section">
+            <label for="strokeSize">Stroke Size:</label>
+            <input type="range" id="strokeSize" min="1" max="30" value="5">
+            <span id="sizeDisplay">5</span>px
+        </div>
+
+        <!-- Randomness Toggle -->
+        <div class="random-section">
+            <label for="randomize">Randomize:</label>
+            <input type="checkbox" id="randomize">
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-section">
+            <button id="undo-btn" title="Undo"><span>&#8630;</span></button>
+            <button id="redo-btn" title="Redo"><span>&#8631;</span></button>
+            <button id="clear-btn" title="Clear Canvas"><span>&#128465;</span></button>
+            <button id="save-btn" title="Save Artwork"><span>&#128190;</span></button>
+        </div>
+    </div>
+
+    <div id="canvas-container">
+        <!-- p5.js Canvas will be injected here -->
+    </div>
+
+    <!-- p5.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+</html>
